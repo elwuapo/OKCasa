@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="../static/css/inicio.css">
+    <link rel="stylesheet" href="../static/css/registro.css">
+    <title>Registro</title>
+</head>
+<body class="blue lighten-4">
+  <!-- NAVBAR -->
+  <nav class="white">
+       <div class="nav-wrapper">
+        <a id="logo" href="{% url "mostrarInicio" %}" class="brand-logo"><i class="material-icons">home</i></i>OKCasa</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down ">
+               <li><a class="lettersblack" href="perfil.html"></i>Cuenta</a></li>
+               <li><a class="lettersblack" href="{% url "mostrarLogin" %}">Iniciar Sesion</a></li>
+               <li><a class="lettersblack" href="{% url "mostrarRegistro" %}">Registrarme</a></li>
+               <li><a class="lettersblack" href="#">Mis Servicios</a></li>
+        </ul>
+       </div>
+  </nav>
+
+   <ul class="sidenav black" id="mobile-demo">
+       <li><a class="lettersblack" href="#">Cuenta</a></li>
+       <li><a class="lettersblack" href="{% url "mostrarLogin" %}">Iniciar Sesion</a></li>
+       <li><a class="lettersblack" href="{% url "mostrarRegistro" %}">Registrarme</a></li>
+       <li><a class="lettersblack" href="#">Mis Servicios</a></li>
+   </ul>
+   <!------------------------------------------------------------------------------------------------------------------------->
+   <!-- FORMULARIO -->
+    <div class="container">
+        <div class="form__top">
+            <h2><span>Registrarse</span></h2>
+        </div>
+        <form class="form__reg" action="{% url "registrarUser" %}" method="post">
+            {% csrf_token %}
+            <input class="input"
+                    type="text"
+                    placeholder="Nombre de usuario"
+                    required
+                    autofocus
+                    name="registro_nombre">
+
+            <input class="input"
+                    type="text"
+                    placeholder="Nombre"
+                    required
+                    autofocus
+                    name="registro_primernombre">
+
+            <input class="input"
+                    type="text"
+                    placeholder="Apellido"
+                    required
+                    autofocus
+                    name="registro_segundonombre">
+
+            <input class="input"
+                    type="email"
+                    placeholder="Email"
+                    required
+                    name="registro_email">
+
+            <input class="input"
+                    type="password"
+                    placeholder="Contraseña"
+                    required
+                    name="registro_contraseña">
+
+            <input class="input"
+                    type="password"
+                    placeholder="Ingrese otra vez la contraseña"
+                    required>
+
+            <div class="btn__form">
+                <input class="btn__submit" type="submit" value="REGISTRAR">
+                <input class="btn__reset" type="reset" value="LIMPIAR">
+            </div>
+
+        </form>
+    </div>
+    <!------------------------------------------------------------------------------------------------------------------------->
+    <!-- FOOTER -->
+    <footer class="page-footer white">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="black-text">Footer Content</h5>
+                <p class="black-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="black-text">Links</h5>
+                <ul>
+                  <li><a class="black-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="black-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="black-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="black-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+    </footer>
+    <!------------------------------------------------------------------------------------------------------------------------->
+</body>
+</html>

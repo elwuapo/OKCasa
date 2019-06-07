@@ -1,0 +1,55 @@
+
+/* Skewed. */
+.skewed .handle {
+    top: 50%;
+    transform: rotate(30deg) translateY(-50%);
+    height: 200%;
+    -webkit-transform-origin: top;
+    -moz-transform-origin: top;
+    transform-origin: top;
+  }
+
+  .skewed .top {
+    transform: skew(-30deg);
+    margin-left: -1000px;
+    width: calc(50vw + 1000px);
+  }
+
+  .skewed .top .content {
+    transform: skew(30deg);
+    margin-left: 1000px;
+  }
+
+  /* Responsive. */
+  @media (max-width: 900px) {
+    body {
+        font-size: 75%;
+    }
+  }
+  /*------------------------------------------------------------------------------------------------------------------*/
+  #logo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    margin-left: 1%;
+    color: black;
+  }
+  
+  .lettersblack{
+      color: black;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  .Barra{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+
+  .TituloBarra{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  blockquote{
+      color: black;
+  }

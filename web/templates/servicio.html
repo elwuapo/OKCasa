@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/inicio.css">
+    <link rel="stylesheet" href="../static/css/servicio.css">
+    <title>Servicios</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="white">
+         <div class="nav-wrapper">
+          <a id="logo" href="{% url "mostrarInicio" %}" class="brand-logo"><i class="material-icons">home</i></i>OKCasa</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down ">
+                 <li><a class="lettersblack" href="perfil.html"></i>Cuenta</a></li>
+                 <li><a class="lettersblack" href="{% url "mostrarLogin" %}">Iniciar Sesion</a></li>
+                 <li><a class="lettersblack" href="{% url "mostrarRegistro" %}">Registrarme</a></li>
+                 <li><a class="lettersblack" href="#">Mis Servicios</a></li>
+          </ul>
+         </div>
+    </nav>
+
+     <ul class="sidenav black" id="mobile-demo">
+         <li><a class="lettersblack" href="#">Cuenta</a></li>
+         <li><a class="lettersblack" href="{% url "mostrarLogin" %}">Iniciar Sesion</a></li>
+         <li><a class="lettersblack" href="{% url "mostrarRegistro" %}">Registrarme</a></li>
+         <li><a class="lettersblack" href="{% url "mostrarServicio" %}">Contratar Servicios</a></li>
+     </ul>
+     <!------------------------------------------------------------------------------------------------------------------------->
+     <div class="row blue-grey lighten-4">
+       <br>
+       <!-- SERVICIO 1 -->
+       <div class="col s10 m8 xl8 offset-m2 offset-xl2">
+         <div class="col s12 m12 xl12 black">
+           <h5 class="white-text center">Contratar un VIT (Verificacion de instalaciones y terminaciones)</h5>
+         </div>
+         <div class="col s3 m3 xl3 cyan darken-3" style="margin:0%;  padding:0%; height:24.53vw;">
+           <h5 class="white-text" style="margin:1.85vw;">
+             En OKCasa nos interesa que tu nuevo hogar cumpla tus sueños con los mejores 
+             estandares de calidad.
+           </h5>
+           <a class="waves-effect waves-light btn modal-trigger" href="#contratar1" style="margin:1.85vw;"><i class="material-icons right">money</i>Contratar servicio</a>
+         </div>
+         <img src="/static/img/img5.png" width="75%">
+       </div>
+       <!------------------------------------------------------------------------------------------------------------------------->
+       <!-- SERVICIO 2 -->
+       <div class="col s10 m8 xl8 offset-m2 offset-xl2">
+         <div class="col s12 m12 xl12 black">
+           <h5 class="white-text center">Contratar un MMC (Medicion metros cuadrados)</h5>
+         </div>
+         <div class="col s3 m3 xl3 green lighten-1" style="margin:0%;  padding:0%; height:24.53vw;">
+           <h5 class="white-text" style="margin:1.85vw;">
+            En OKCasa nos interesa que tu nuevo hogar cumpla tus sueños con los mejores 
+            estandares de calidad.
+           </h5>
+           <a class="waves-effect waves-light btn" style="margin:1.85vw;"><i class="material-icons right">money</i>Contratar servicio</a>
+         </div>
+         <img src="/static/img/img6.png" width="75%">
+       </div>
+       <!------------------------------------------------------------------------------------------------------------------------->
+       <!-- SERVICIO 3 -->
+       <div class="col s10 m8 xl8 offset-m2 offset-xl2">
+         <div class="col s12 m12 xl12 black">
+           <h5 class="white-text center">Contratar un ILAG (Inspeciones de luz, agua, gas)</h5>
+         </div>
+         <div class="col s3 m3 xl3 orange" style="margin:0%;  padding:0%; height:24.53vw;">
+           <h5 class="white-text" style="margin:1.85vw;">
+            En OKCasa nos interesa que tu nuevo hogar cumpla tus sueños con los mejores 
+            estandares de calidad.
+           </h5>
+           <a class="waves-effect waves-light btn" style="margin:1.85vw;"><i class="material-icons right">money</i>Contratar servicio</a>
+         </div>
+         <img src="/static/img/img7.png" width="75%">
+       </div>
+       <!------------------------------------------------------------------------------------------------------------------------->
+       <!-- SERVICIO 4 -->
+       <div class="col s10 m8 xl8 offset-m2 offset-xl2">
+         <div class="col s12 m12 xl12 black">
+           <h5 class="white-text center">Contratar un IT (Inspeciones de termografia)</h5>
+         </div>
+         <div class="col s3 m3 xl3 purple" style="margin:0%;  padding:0%; height:24.53vw;">
+           <h5 class="white-text" style="margin:1.85vw;">
+            En OKCasa nos interesa que tu nuevo hogar cumpla tus sueños con los mejores 
+            estandares de calidad.
+           </h5>
+           <a class="waves-effect waves-light btn" style="margin:1.85vw;"><i class="material-icons right">money</i>Contratar servicio</a>
+         </div>
+         <img src="/static/img/img8.png" width="75%">
+       </div>
+       <!------------------------------------------------------------------------------------------------------------------------->
+     </div>
+
+     <!-- FOOTER -->
+     <footer class="page-footer white">
+           <div class="container">
+             <div class="row">
+               <div class="col l6 s12">
+                 <h5 class="black-text">Footer Content</h5>
+                 <p class="black-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+               </div>
+               <div class="col l4 offset-l2 s12">
+                 <h5 class="black-text">Links</h5>
+                 <ul>
+                   <li><a class="black-text text-lighten-3" href="#!">Link 1</a></li>
+                   <li><a class="black-text text-lighten-3" href="#!">Link 2</a></li>
+                   <li><a class="black-text text-lighten-3" href="#!">Link 3</a></li>
+                   <li><a class="black-text text-lighten-3" href="#!">Link 4</a></li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+           <div class="footer-copyright">
+             <div class="black-text container">
+             © 2014 Copyright Text
+             <a class="black-text text-lighten-4 right" href="#!">More Links</a>
+             </div>
+           </div>
+     </footer>
+     <!------------------------------------------------------------------------------------------------------------------------->
+      <!-- MODALS -->
+      <div id="contratar1" class="modal">
+         <div class="modal-content">
+            <h4>Contrato de servicio VIT</h4>
+            <p>Informacion relevante para la toma del servicio.</p>
+            <form class="col s12">
+               <div class="row">
+                  <div class="input-field col s4">
+                     <input placeholder="Nombre" id="servicio_nombre1" type="text" class="validate" value="{{user.first_name}}">
+                     <label for="servicio_nombre1">Nombre</label>
+                  </div>
+                  <div class="input-field col s4">
+                     <input id="servicio_apellido1" type="text" class="validate" value="{{user.last_name}}">
+                     <label for="servicio_apellido1">Apillido</label>
+                  </div>
+                  <div class="input-field col s4">
+                     <label>
+                        <input type="checkbox" checked="checked" disabled="disabled"/>
+                        <span>Credito hipotecario "Banco Estado"</span>
+                     </label>
+                  </div>
+                  <div class="input-field col s12">
+                     <input id="servicio_direccion1" type="text" class="validate" value="">
+                     <label for="servicio_direccion1">Direccion</label>
+                  </div>
+                  <div class="input-field col s4">
+                     <input id="servicio_precio" type="text" class="validate" value="$100.000" disabled="disabled">
+                     <label for="servicio_precio">Precio del servicio</label>
+                  </div>
+                  <div class="input-field col s4">
+                     <input id="servicio_descuento" type="text" class="validate" value="$35.000" disabled="disabled">
+                     <label for="servicio_descuento">Descuento credito hipotecario</label>
+                  </div>
+                  <div class="input-field col s4">
+                     <input id="servicio_valorfinal" type="text" class="validate" value="$65.000" disabled="disabled">
+                     <label for="servicio_valorfinal">Valor final</label>
+                  </div>
+                   <div class="input-field col s4">
+                     <input id="servicio_fecha" type="date" class="validate">
+                     <label for="servicio_fecha">Valor final</label>
+                  </div>
+               </div>
+               <button class="btn waves-effect waves-light" type="submit" name="action">Aceptar contrato
+                     <i class="material-icons right">send</i>
+               </button>
+            </form>
+         </div>
+         <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+         </div>
+      </div>
+     <!------------------------------------------------------------------------------------------------------------------------->
+     <!-- Compiled and minified JavaScript -->
+     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+     <script src="/static/js/inicio.js" charset="utf-8"></script>
+     <script>
+       document.addEventListener('DOMContentLoaded', function() {
+       // var elems = document.querySelectorAll('.sidenav');
+       // var instances = M.Sidenav.init(elems);
+       M.AutoInit();
+       });
+     </script>
+  </body>
+</html>
